@@ -1,21 +1,21 @@
 <img src="icon.svg" align="right" width="200" height="145" />
 
-# vue-socketio-heroku-starter
+# Vue-Socketio
 
-`vue-socketio-heroku-starter` is a vue-socket.io boilerplate to set up a new vue application using a node backend and websockets. It consists of a vue client and a node server and is using [vue-socket.io-extended](https://github.com/probil/vue-socket.io-extended) to bind socket.io to the vue instance. The project is set up to be deployed to Heroku.
+`Vue-Socketio` é um boilerplate vue-socket.io para configurar uma nova aplicação vue usando node backend e websockets. Ele consiste em um cliente vue e um servidor node e está usando [vue-socket.io-extended] (https://github.com/probil/vue-socket.io-extended) para vincular socket.io à instância Vue. O projeto está configurado para ser implantado no Heroku.
 
-:sparkles: Example app demo:
+:sparkles: Aplicação demonstrativa:
 [vue-socketio-heroku-starter.herokuapp.com](https://vue-socketio-heroku-starter.herokuapp.com/)
 
-## Usage
+## Execute
 
-Run `npm run serve` and `node server` for development, run `npm run build` and `node server` for production.
+Execute `yarn start` para desenvolvimento, execute `yarn build` e `yarn start` para produção
 
-The application is a simple counter example app, using a node-socket.io server to increment the value across all connected clients. The node server is located in `server.js`.
+O projeto é uma aplicação de contador simples, usando um servidor node-socket.io para incrementar o valor em todos os clientes conectados. O servidor node está localizado em `server.js`.
 
-## Deploy to Heroku
+## Fazer Deploy no Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/alexwidua/vue-socketio-heroku-starter)
 
-or manually create a new Heroku application and add the `heroku/nodejs` and `https://github.com/heroku/heroku-buildpack-static` buildpacks. Note that
-the node server runs from the path specified in the [Procfile](https://heroku-vue-socket-test.herokuapp.com/).
+ou crie manualmente um novo aplicativo Heroku e adicione os buildpacks `heroku/nodejs` e` https://github.com / heroku/heroku-buildpack-static`. Observe que
+o servidor node é executado a partir do caminho especificado no [Procfile] (https://heroku-vue-socket-test.herokuapp.com/).
