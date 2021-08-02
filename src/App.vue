@@ -3,7 +3,7 @@
 		<div class="container">
 			<h3
 				:style="isConnected ? 'color: green' : 'color: red'"
-				v-html="`Connected: ${isConnected}`"
+				v-html="`Conectado: ${isConnected}`"
 			/>
 			<ClientList />
 			<Counter />
@@ -28,10 +28,10 @@ export default {
 	},
 	sockets: {
 		/*
-		 * 👂 Listen to socket events emitted from the socket server
+		 * 👂 Ouça os eventos emitidos pelo servidor socket.
 		 */
 		connect() {
-			console.log('Connected to the socket server.')
+			console.log('Conectado ao Servidor Socket')
 			this.isConnected = true
 		}
 	}

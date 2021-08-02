@@ -3,7 +3,7 @@
 		<h1 v-html="value" />
 		<button
 			@click.prevent="increment()"
-			v-html="'Increment'"
+			v-html="'Incrementar'"
 			style="font-size: 1.25em"
 		/>
 	</div>
@@ -19,7 +19,7 @@ export default {
 	},
 	methods: {
 		/*
-		 * 💥 Emit increment_counter event to the socket server.
+		 * 💥 Emita o evento increment_counter para o servidor socket.
 		 */
 		increment() {
 			this.$socket.client.emit('increment_counter')
@@ -27,7 +27,7 @@ export default {
 	},
 	sockets: {
 		/*
-		 * 👂 Listen to socket events emitted from the socket server
+		 * 👂 Ouça os eventos emitidos pelo servidor socket.
 		 */
 		update_counter(value) {
 			this.value = value

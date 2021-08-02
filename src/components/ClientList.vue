@@ -1,14 +1,14 @@
 <template>
 	<div class="clients">
-		<h3 v-html="'Connected clients'" />
+		<h3 v-html="'Clientes Conectados'" />
 		<span
 			v-if="clients.length == 0"
-			v-html="'No connected clients.'"
+			v-html="'Nenhum cliente conectado'"
 			style="opacity: 0.5"
 		/>
-		<ul v-if="clients.length > 0">
+		<ol v-if="clients.length > 0">
 			<li v-for="client in clients" :key="client.id" v-html="client.id" />
-		</ul>
+		</ol>
 	</div>
 </template>
 
@@ -21,7 +21,7 @@ export default {
 	},
 	sockets: {
 		/*
-		 * 👂 Listen to socket events emitted from the socket server
+		 * 👂 Ouça os eventos emitidos pelo servidor de socket.
 		 */
 		update_clients(clients) {
 			this.clients = clients
